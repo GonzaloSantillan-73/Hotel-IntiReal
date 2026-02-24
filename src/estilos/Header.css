@@ -43,6 +43,7 @@
   flex-direction: column;
   gap: 20px;
   margin: 20px 10px;
+  list-style: none;
 }
 
 .navegacion a{
