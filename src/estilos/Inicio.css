@@ -1,0 +1,32 @@
+.img-hero{
+  background-image: url("/public/imagenes/hotel.jpg");
+  height: calc(100vh - 80px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-hero div{
+  background-color: rgba(80, 60, 37, 0.69);
+  color: white;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.boton-reserva{
+  display: block;
+  padding: 10px;
+  width: fit-content;
+  height: fit-content;
+  margin: 15px auto;
+  background-color: brown;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+}

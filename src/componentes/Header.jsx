@@ -1,11 +1,18 @@
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "../estilos/Header.css";
 import { TiThMenu } from "react-icons/ti";
-import { useState } from "react";
 import { MdOutlineClose } from "react-icons/md";
 
 function Header() {
   const [barra, setBarra] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    setBarra(false);
+  }, [location]);
 
   const cambiarBarra = () => {
     setBarra(!barra);
@@ -14,7 +21,7 @@ function Header() {
     <>
       <header className="Header">
         <TiThMenu className="boton-menu" onClick={() => cambiarBarra()} />
-        <h1>Inti Real</h1>
+        <h1>IntiReal</h1>
         <nav className={barra ? "navegacion abierto" : "navegacion"}>
           <MdOutlineClose
             className="boton-close"
@@ -22,19 +29,19 @@ function Header() {
           />
           <ul>
             <li>
-              <Link>Inicio</Link>
+              <Link to="/">Inicio</Link>
             </li>
             <li>
-              <Link>Nosotros</Link>
+              <Link to="/nosotros">Nosotros</Link>
             </li>
             <li>
-              <Link>Habitaciones</Link>
+              <Link to="/habitaciones">Habitaciones</Link>
             </li>
             <li>
-              <Link>Servicios</Link>
+              <Link to="/servicios">Servicios</Link>
             </li>
             <li>
-              <Link>Contacto</Link>
+              <Link to="/contacto">Contacto</Link>
             </li>
           </ul>
         </nav>
