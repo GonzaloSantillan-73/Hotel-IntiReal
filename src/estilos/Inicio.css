@@ -1,5 +1,5 @@
 .img-hero{
-  background-image: url("/public/imagenes/hotel.jpg");
+  background-image: url("imagenes/hotel.jpg");
   height: calc(100vh - 80px);
   background-repeat: no-repeat;
   background-size: cover;
