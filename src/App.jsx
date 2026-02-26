@@ -6,6 +6,7 @@ import Nosotros from "./componentes/Nosotros"
 import Habitaciones from "./componentes/Habitaciones"
 import Servicios from "./componentes/Servicios"
 import Contacto from "./componentes/Contacto"
+import Footer from "./componentes/Footer"
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/servicios' element={<Servicios/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   )

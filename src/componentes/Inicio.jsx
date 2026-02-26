@@ -14,13 +14,13 @@ const Inicio = () => {
       id:2,
       nombre: "Roberto Diaz",
       img: "/imagenes/persona2.jpg",
-      comentario:"Mi estancia en HotelAdobe fue espectacular. El diseño del hotel, combinado con sus servicios de primera categoría, hicieron que fuera una experiencia verdaderamente relajante y agradable."
+      comentario:"Mi estancia en Hotel fue espectacular. El diseño del hotel, combinado con sus servicios de primera categoría, hicieron que fuera una experiencia verdaderamente relajante y agradable."
     },
     {
       id:3,
       nombre: "Ignacio Vega",
       img: "/imagenes/persona3.jpg",
-      comentario:"Mi estancia en HotelAdobe fue espectacular. El diseño del hotel, combinado con sus servicios de primera categoría, hicieron que fuera una experiencia verdaderamente relajante y agradable."
+      comentario:"Mi estancia en Hotel fue espectacular. El diseño del hotel, combinado con sus servicios de primera categoría, hicieron que fuera una experiencia verdaderamente relajante y agradable."
     }
   ]
 
