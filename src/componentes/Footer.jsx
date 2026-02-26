@@ -38,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="final">Todos los derechos reservados Hotel Adobe. Copyright ©</p>
+      <p className="final">Todos los derechos reservados Hotel IntiReal. Copyright ©</p>
     </footer>
   );
 };
