@@ -25,8 +25,56 @@
   width: fit-content;
   height: fit-content;
   margin: 15px auto;
-  background-color: brown;
+  background-color: oklch(0.26 0.09 25.84);
   color: white;
   text-decoration: none;
   border-radius: 10px;
 }
+
+.contenedor-inicio{
+  background-color: beige;
+}
+
+.contenedor-inicio h2{
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgb(131, 49, 24);
+  padding: 0 10px;
+}
+
+.parrafo{
+  font-size: 25px;
+  color: rgb(19, 19, 19);
+  text-align: center;
+  margin-top: 15px;
+  letter-spacing: 2px;
+  padding: 0 10px 20px 10px;
+  overflow-wrap: break-word;
+}
+
+.ilustraciones-inicio{
+  overflow: hidden;
+  width: 100%;
+  display: grid;
+  margin: 3px 0;
+  gap: 5px;
+}
+
+.ilustraciones-inicio img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.titulo-testimonios{
+  width: 100%;
+  height: 80px;
+  font-size: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(78, 21, 3);
+  color: white;
+}
+
