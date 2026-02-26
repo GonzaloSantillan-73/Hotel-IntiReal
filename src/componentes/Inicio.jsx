@@ -33,7 +33,6 @@ const Inicio = () => {
             Descubre el lugar perfecto para tu descanso. Confort y atención
             personalizada.
           </p>
-          <Link className="boton-reserva">Reserva ahora</Link>
         </div>
       </div>
       <h2>Un Hotel con Encanto</h2>

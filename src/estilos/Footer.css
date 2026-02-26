@@ -2,6 +2,18 @@ footer{
   background-color: rgb(10, 10, 10);
   padding-top: 5px;
   color: white;
+  margin-top: 30px;
+}
+
+.footer-contenedor{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+@media (min-width: 780px) {
+  .footer-contenedor{
+    grid-template-columns: 33% 33% 33%;
+  }
 }
 
 .titulo-footer{
@@ -13,11 +25,11 @@ footer{
 }
 
 .enlaces-footer{
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(236, 236, 206);
   margin: 10px 0;
-  padding-left: 10px;
-  width: 155px;
+  padding: 0 10px;
+  width: 130px;
 }
 
 .enlaces-footer a{
@@ -25,10 +37,56 @@ footer{
   display: block;
   color: white;
   font-size: 20px;
+  margin-top: 10px;
   transition: transform 0.3s ease;
 }
 
 .enlaces-footer a:hover{
   color: rgb(204, 104, 37);
-  transform: translateX(15px);
+  transform: translateX(5px);
+}
+
+.redes-footer, .contacto-footer{
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  color: rgb(236, 236, 206);
+  padding: 0 10px;
+  margin-top: 10px;
+}
+
+.redes-footer p, .contacto-footer p{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.redes-footer span, .contacto-footer span{
+  font-size: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.iconos-redes, .iconos-contacto{
+  font-size: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.iconos-redes a, .iconos-contacto a{
+  color: white;
+  text-decoration: none;
+}
+
+hr{
+  margin: 20px;
+}
+
+.final{
+  text-align: center;
+  padding-bottom: 20px;
 }
