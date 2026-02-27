@@ -1,0 +1,27 @@
+.card-servicios{
+  height: fit-content;
+  background-color: white;
+  padding: 20px;
+  max-width: 350px;
+  min-width: 350px;
+  max-height: 120px;
+  min-height: 120px;
+  border-radius: 8px;
+}
+
+.icono-titulo{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.icono-titulo span{
+  font-size: 35px;
+}
+
+.card-servicios h2,
+.card-servicios p,
+.card-servicios span {
+  color: rgb(73, 7, 7);
+  font-weight: 300;
+}

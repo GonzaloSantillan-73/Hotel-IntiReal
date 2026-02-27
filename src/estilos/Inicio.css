@@ -1,3 +1,8 @@
+.inicio{
+  background-color: beige;
+  padding-bottom: 30px;
+}
+
 .img-hero{
   background-image: url("/imagenes/hotel.jpg");
   height: calc(100vh - 80px);
@@ -10,8 +15,9 @@
 }
 
 .img-hero div{
-  background-color: rgba(80, 60, 37, 0.69);
+  background-color: rgba(37, 28, 16, 0.582);
   color: white;
+  font-weight: 300;
   width: 300px;
   height: fit-content;
   text-align: center;
@@ -31,11 +37,7 @@
   border-radius: 10px;
 }
 
-.contenedor-inicio{
-  background-color: beige;
-}
-
-.contenedor-inicio h2{
+.inicio h2{
   font-size: 36px;
   text-align: center;
   margin-top: 20px;
@@ -45,6 +47,7 @@
 
 .parrafo{
   font-size: 25px;
+  font-weight: 300;
   color: rgb(19, 19, 19);
   text-align: center;
   margin-top: 15px;
@@ -77,4 +80,3 @@
   background-color: rgb(78, 21, 3);
   color: white;
 }
-

@@ -2,7 +2,6 @@ footer{
   background-color: rgb(10, 10, 10);
   padding-top: 5px;
   color: white;
-  margin-top: 30px;
 }
 
 .footer-contenedor{
@@ -28,7 +27,7 @@ footer{
 .enlaces-footer{
   font-size: 25px;
   color: rgb(236, 236, 206);
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 0 10px;
   width: 130px;
 }
@@ -42,10 +41,6 @@ footer{
   transition: transform 0.3s ease;
 }
 
-.enlaces-footer a:hover{
-  color: rgb(204, 104, 37);
-  transform: translateX(5px);
-}
 
 .redes-footer, .contacto-footer{
   display: flex;
@@ -53,7 +48,7 @@ footer{
   font-size: 25px;
   color: rgb(236, 236, 206);
   padding: 0 10px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .redes-footer p, .contacto-footer p{
@@ -81,6 +76,7 @@ footer{
 .iconos-redes a, .iconos-contacto a{
   color: white;
   text-decoration: none;
+  transition: transform 0.3s ease;
 }
 
 hr{
@@ -90,4 +86,9 @@ hr{
 .final{
   text-align: center;
   padding-bottom: 20px;
+}
+
+.enlaces-footer a:hover, .iconos-redes a:hover, .iconos-contacto a:hover{
+  color: rgb(204, 104, 37);
+  transform: translateX(5px);
 }
