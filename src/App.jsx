@@ -7,6 +7,7 @@ import Habitaciones from "./componentes/Habitaciones"
 import Servicios from "./componentes/Servicios"
 import Contacto from "./componentes/Contacto"
 import Footer from "./componentes/Footer"
+import ScrollToTop from './componentes/ScrollToTop'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <div>
       <BrowserRouter>
+        <ScrollToTop/>
         <Header/>
         <Routes>
           <Route path='/' element={<Inicio/>}/>

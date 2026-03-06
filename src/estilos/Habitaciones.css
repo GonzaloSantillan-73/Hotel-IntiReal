@@ -1,0 +1,46 @@
+.hero-habitaciones{
+  background-image: linear-gradient(rgba(0,0,0,0.651), rgba(0,0,0,0.651)),url("/imagenes/img-hero-habitaciones.jpg");
+  height: 30vh;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.contenedor-item-habitaciones{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 30px auto;
+  padding: 10px;
+  width: 95%;
+  justify-content: center;
+}
+
+@media (min-width: 620px) {
+  .contenedor-item-habitaciones{
+    grid-template-columns: repeat(2,minmax(280px,430px));
+    grid-template-rows: 1fr 1fr;
+  }
+  .hero-habitaciones{
+    height: 50vh;
+    font-size: 25px;
+    padding: 10px 20px;
+  }
+}
+
+@media (min-width: 930px) {
+  .contenedor-item-habitaciones{
+    grid-template-columns: repeat(3,minmax(280px,430px));
+    grid-template-rows: 1fr;
+  }
+    .hero-habitaciones{
+    font-size: 35px;
+  }
+}
+

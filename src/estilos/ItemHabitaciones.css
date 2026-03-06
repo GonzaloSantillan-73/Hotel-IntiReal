@@ -1,0 +1,44 @@
+.item-habitaciones{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 10px auto;
+  background-color: white;
+}
+
+.item-habitaciones img{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.item-habitaciones div{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.item-habitaciones div > ul{
+  margin-left: 20px;
+  color: #644739;
+}
+
+.boton-reservar{
+  background-color: #A0522D;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.item-habitaciones div > p:nth-of-type(2){
+  color: #A0522D;
+  font-weight: 700;
+}
