@@ -12,6 +12,18 @@
   padding: 10px;
 }
 
+.hero-habitaciones div{
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
 .contenedor-item-habitaciones{
   display: grid;
   grid-template-columns: 1fr;
@@ -38,9 +50,6 @@
   .contenedor-item-habitaciones{
     grid-template-columns: repeat(3,minmax(280px,430px));
     grid-template-rows: 1fr;
-  }
-    .hero-habitaciones{
-    font-size: 35px;
   }
 }
 

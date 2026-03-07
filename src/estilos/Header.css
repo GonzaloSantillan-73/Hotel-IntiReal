@@ -3,8 +3,8 @@
   color: white;
   position: relative;
   display: flex;
-  height: 80px;
   align-items: center;
+  height: 80px;
 }
 
 .Header h1{
@@ -49,4 +49,50 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
+  transition: all 0.1s linear;
+}
+
+.navegacion a:hover{
+  color: rgb(209, 149, 81);
+}
+
+/* DESKTOP */
+
+@media (min-width: 768px){
+
+  .boton-menu{
+    display: none;
+  }
+
+  .boton-close{
+    display: none;
+  }
+
+  .Header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 80px;
+  }
+
+  .Header h1{
+    margin: 0;
+    font-size: 40px;
+  }
+
+  .navegacion{
+    position: static;
+    transform: none;
+    background-color: transparent;
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .navegacion ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 0;
+  }
 }

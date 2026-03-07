@@ -17,6 +17,18 @@
   color: white;
 }
 
+.img-hero-nosotros div{
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
 .contenedor-historia {
   background-color: rgb(255, 255, 255);
   padding: 20px;
@@ -24,9 +36,9 @@
   margin: 20px 10px 0 10px;
   height: fit-content;
   color: rgb(32, 32, 32);
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
 }
 
 .div-img-nosotros {
@@ -37,12 +49,7 @@
   overflow: hidden;
 }
 
-.contenedor-grid-historia {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.contenedor-grid-historia img {
+.contenedor-historia img {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -79,83 +86,73 @@
   color: rgb(61, 61, 61);
 }
 
-@media (min-width: 550px) {
-  .contenedor-historia>div:nth-child(even) {
-    display: flex;
-    flex: 1;
-    gap: 30px;
-    align-items: center;
-  }
-
-  .contenedor-historia>div:nth-child(odd) {
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 30px;
-    flex: 1;
-    align-items: center;
-  }
-
-  .contenedor-grid-historia img {
-    width: 200px;
-    height: 200px;
-  }
-
-  .img-hero-nosotros {
+@media (min-width: 500px) {
+  .img-hero-nosotros{
     height: 40vh;
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 750px) {
-  .contenedor-grid-historia img {
-    width: 300px;
-    height: 300px;
   }
 
-  .contenedor-historia h2 {
-    font-size: 35px;
-  }
-
-  .contenedor-historia p {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 950px) {
-  .contenedor-grid-historia img {
-    width: 400px;
-    height: 400px;
-  }
-
-  .contenedor-historia h2 {
-    font-size: 40px;
-  }
-
-  .contenedor-historia p {
-    font-size: 25px;
-  }
-}
-
-@media (min-width: 1150px){
-  .contenedor-grid-historia img {
-    width: 500px;
-    height: 500px;
-  }
-  .contenedor-valores,.contenedor-historia{
-    margin: 20px 10% 30px 10%;
-    padding: 50px;
-  }
-
-  .contenedor-historia h2 {
-    font-size: 40px;
-  }
-
-  .contenedor-historia p {
+  .img-hero-nosotros h2{
     font-size: 30px;
   }
+
+  .img-hero-nosotros p{
+    font-size: 20px;
+  }
+
+  .contenedor-historia>div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .contenedor-historia> div > div, .contenedor-historia> div > img {
+    width: 50%;
+  }
+
+  .contenedor-historia > :nth-child(even){
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 780px) {
+  .contenedor-historia> div > img{
+    height: 300px;
+  }
+}
+
+@media (min-width: 1000px) {
 
   .img-hero-nosotros{
     height: 50vh;
+  }
+
+  .img-hero-nosotros h2{
+    font-size: 40px;
+  }
+
+  .img-hero-nosotros p{
+    font-size: 25px;
+  }
+
+  .contenedor-historia> div > img{
+    height: 400px;
+  }
+
+  .contenedor-historia{
+    max-width: 1000px;
+    margin: 30px auto 15px auto;
+  }
+
+  .contenedor-historia h2{
     font-size: 30px;
+  }
+
+  .contenedor-historia p{
+    font-size: 20px;
+  }
+
+  .contenedor-valores{
+    max-width: 1000px;
+    margin: 15px auto 30px auto;
   }
 }

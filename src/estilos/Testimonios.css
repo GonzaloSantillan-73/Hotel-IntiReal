@@ -1,0 +1,39 @@
+.contenedor-testimonios{
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-testimonio {
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(68, 68, 68, 0.192);
+  display: flex;
+  max-width: 420px;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.card-testimonio img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.texto-testimonio p {
+  font-style: italic;
+  margin-top: 3px;
+  text-align: center;
+}
+
+.texto-testimonio h2 {
+  font-size: 20px;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: rgb(131, 100, 75)red;
+}

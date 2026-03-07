@@ -37,8 +37,10 @@ const Habitaciones = () => {
   return (
     <div>
       <div className="hero-habitaciones">
-        <h2>Nuestras Habitaciones</h2>
-        <p>Disfrutá de habitaciones cálidas, camas cómodas y vistas únicas</p>
+        <div>
+          <h2>Nuestras Habitaciones</h2>
+          <p>Disfrutá de habitaciones cálidas, camas cómodas y vistas únicas</p>
+        </div>
       </div>
       <div className="contenedor-item-habitaciones">
         {habitaciones.map((hab, i) => (
