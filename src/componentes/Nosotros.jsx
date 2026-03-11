@@ -1,36 +1,13 @@
 import "../estilos/Nosotros.css";
 import Valores from "./Valores";
+import ImagenHero from "./ImagenHero"
+import { arrayValores } from "../data/data"
 
 const Nosotros = () => {
-  const valores = [
-    {
-      titulo: "Hospitalidad",
-      icono: "/imagenes/icono-cultura.png",
-      descripcion: "Atención cercana, personalizada y con calidez familiar.",
-    },
-    {
-      titulo: "Identidad local",
-      icono: "/imagenes/icono-hospitalidad.png",
-      descripcion: "Celebramos nuestras raíces en cada espacio y servicio.",
-    },
-    {
-      titulo: "Sustentabilidad",
-      icono: "/imagenes/icono-sustentabilidad.png",
-      descripcion:
-        "Respetamos el entorno natural y promovemos prácticas ecológicas.",
-    },
-  ];
-
+  const valores = arrayValores
   return (
     <div className="contenedor-nosotros">
-      <div className="img-hero-nosotros">
-        <div>
-          <h2>Bienvenidos a Hotel IntiReal</h2>
-          <p>
-            Un rincón de tranquilidad, pensado para que te sientas como en casa.
-          </p>
-        </div>
-      </div>
+      <ImagenHero img="hero-nosotros.png" tam={30} text="Un rincón de tranquilidad, pensado para que te sientas como en casa." />
       <div className="contenedor-historia">
         <div>
           <img src="/imagenes/nosotros1.png" alt="" />

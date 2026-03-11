@@ -8,6 +8,8 @@ import Servicios from "./componentes/Servicios"
 import Contacto from "./componentes/Contacto"
 import Footer from "./componentes/Footer"
 import ScrollToTop from './componentes/ScrollToTop'
+import { FaWhatsapp } from "react-icons/fa6";
+import { Link } from 'react-router-dom'
 
 function App() {
 
@@ -25,6 +27,9 @@ function App() {
           <Route path='/contacto' element={<Contacto/>}/>
         </Routes>
         <Footer/>
+        <Link className='boton-flotante'>
+          <FaWhatsapp />
+        </Link>
       </BrowserRouter>
     </div>
   )

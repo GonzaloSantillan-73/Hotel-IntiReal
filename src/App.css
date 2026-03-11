@@ -1,0 +1,21 @@
+.boton-flotante{
+  color: white;
+  font-size: 40px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: fit-content;
+  width: fit-content;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  transition: all 0.1s linear;
+}
+
+.boton-flotante:hover{
+  background-color: rgb(0, 182, 0);
+  transform: scale(1.1);
+}

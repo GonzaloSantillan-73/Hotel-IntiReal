@@ -1,0 +1,71 @@
+.div-hero {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: white;
+  padding: 3%;
+}
+
+/* HERO VARIABLE (los que no son 100vh) */
+.hero-variable{
+  min-height: 30vh;
+}
+
+/* Texto base */
+
+.div-hero h4 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.div-hero p {
+  font-size: 25px;
+}
+
+/* Tablet */
+
+@media (min-width: 700px) {
+
+  .div-hero h4 {
+    font-size: 20px;
+  }
+
+  .div-hero p {
+    font-size: 35px;
+  }
+
+  .hero-variable{
+    min-height: 40vh;
+  }
+
+
+}
+
+/* Desktop */
+
+@media (min-width: 900px) {
+  .div-hero div{
+    width: 60%;
+  }
+
+  .div-hero h4 {
+    font-size: 25px;
+  }
+
+  .div-hero p {
+    font-size: 30px;
+  }
+
+  /* solo crecen los heroes que no son full */
+  .hero-variable{
+    min-height: 50vh;
+  }
+
+}

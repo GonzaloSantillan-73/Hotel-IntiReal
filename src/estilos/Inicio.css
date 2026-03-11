@@ -2,37 +2,6 @@
   background-color: white;
 }
 
-.img-hero {
-  background-image: url("/imagenes/hotel.jpg");
-  height: calc(100vh - 80px);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-hero div {
-  color: white;
-  font-weight: 300;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-  border-radius: 20px;
-}
-
-.img-hero h1 {
-  font-size: 20px;
-}
-
-.img-hero p {
-  font-size: 30px;
-}
-
 .subcontenedor-inicio {
   padding: 10px;
   margin: 0 auto;
@@ -53,14 +22,17 @@
   font-size: 30px;
   text-align: center;
   color: rgb(131, 49, 24);
+  margin: 40px auto 30px auto;
 }
 
 .parrafo {
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   color: rgb(19, 19, 19);
   letter-spacing: 2px;
   overflow-wrap: break-word;
+  line-height: 1.7em;
+  padding: 10px 20px;
 }
 
 .ilustraciones-inicio {
@@ -77,18 +49,6 @@
   object-fit: cover;
 }
 
-.titulo-testimonios {
-  width: 100%;
-  height: 80px;
-  font-size: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(78, 21, 3);
-  color: white;
-  margin: 20px auto;
-}
-
 .boton-saberMas {
   display: block;
   border-radius: 8px;
@@ -97,7 +57,7 @@
   width: fit-content;
   height: fit-content;
   padding: 5px;
-  margin: 20px 0;
+  margin: 5px 0 50px 20px;
   background-color: rgb(160, 114, 71);
 }
 
@@ -121,5 +81,15 @@
     grid-column: 2;
     grid-row: 2;
   }
+
+}
+
+.mapa{
+  border: 0;
+  width: 100%;
+  margin: 10px auto 30px auto;
+  max-width: 500px;
+  height: 300px;
+  display: block;
 
 }

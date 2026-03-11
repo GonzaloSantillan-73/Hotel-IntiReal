@@ -1,36 +1,10 @@
 .contenedor-nosotros {
-  background-color: sienna;
   padding-bottom: 20px;
   height: fit-content;
 }
 
-.img-hero-nosotros {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.377), rgba(0, 0, 0, 0.377)), url("/imagenes/hero-nosotros.png");
-  height: 30vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-
-.img-hero-nosotros div{
-  color: white;
-  text-align: center;
-  font-weight: 300;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
 .contenedor-historia {
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 10px 0 10px;
@@ -87,22 +61,12 @@
 }
 
 @media (min-width: 500px) {
-  .img-hero-nosotros{
-    height: 40vh;
-  }
-
-  .img-hero-nosotros h2{
-    font-size: 30px;
-  }
-
-  .img-hero-nosotros p{
-    font-size: 20px;
-  }
-
   .contenedor-historia>div {
     display: flex;
     gap: 30px;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.164);
+    border-radius: 10px;
   }
 
   .contenedor-historia> div > div, .contenedor-historia> div > img {
@@ -111,6 +75,16 @@
 
   .contenedor-historia > :nth-child(even){
     flex-direction: row-reverse;
+  }
+
+  .contenedor-historia > :nth-child(even) img{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .contenedor-historia > :nth-child(odd) img{
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -121,19 +95,6 @@
 }
 
 @media (min-width: 1000px) {
-
-  .img-hero-nosotros{
-    height: 50vh;
-  }
-
-  .img-hero-nosotros h2{
-    font-size: 40px;
-  }
-
-  .img-hero-nosotros p{
-    font-size: 25px;
-  }
-
   .contenedor-historia> div > img{
     height: 400px;
   }

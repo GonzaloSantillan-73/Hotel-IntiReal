@@ -1,59 +1,14 @@
 import "../estilos/Servicios.css";
-import { GiCoffeeCup } from "react-icons/gi";
-import { FaWifi } from "react-icons/fa";
-import { FaCar } from "react-icons/fa";
-import { FaWaterLadder } from "react-icons/fa6";
-import { IoRestaurant } from "react-icons/io5";
-import { GiLotus } from "react-icons/gi";
 import CardServicios from "./CardServicios";
+import ImagenHero from "./ImagenHero"
+import { arrayServicios } from "../data/data"
 
 const Servicios = () => {
-  const servicios = [
-    {
-      titulo: "Desayuno Artesanal",
-      descripcion:
-        "Disfrutá cada mañana de productos caseros, frutas frescas, etc.",
-      icono: <GiCoffeeCup />,
-    },
-    {
-      titulo: "Wi-Fi Gratis",
-      descripcion:
-        "Mantente conectado con internet de alta velocidad en todo el hotel.",
-      icono: <FaWifi />,
-    },
-    {
-      titulo: "Estacionamiento",
-      descripcion:
-        "Amplio espacio seguro para que estaciones con tranquilidad.",
-      icono: <FaCar />,
-    },
-    {
-      titulo: "Pileta / Jacuzzi",
-      descripcion: "Relajate en nuestra piscina al aire libre.",
-      icono: <FaWaterLadder />,
-    },
-    {
-      titulo: "Restaurante",
-      descripcion:
-        "Recomendaciones personalizadas para que explores lo mejor de Tinogasta.",
-      icono: <IoRestaurant />,
-    },
-    {
-      titulo: "Espacios de Relajación",
-      descripcion:
-        "Patios internos y zonas de lectura para desconectar y descansar.",
-      icono: <GiLotus />,
-    },
-  ];
+  const servicios = arrayServicios
 
   return (
     <div className="servicios">
-      <div className="img-hero-servicios">
-        <div>
-          <h1>Nuestros Servicios</h1>
-          <p>Comodidad, naturaleza y hospitalidad en cada detalle</p>
-        </div>
-      </div>
+      <ImagenHero img="hero-nosotros.png" tam={30} text="Comodidad, naturaleza y hospitalidad en cada detalle" />
       <div className="contenedor-card-servicios">
         {servicios.map((servicio, i) => {
           return (

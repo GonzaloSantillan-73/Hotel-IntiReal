@@ -3,35 +3,6 @@
   padding-bottom: 30px;
 }
 
-.img-hero-servicios{
-  background-image: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0,0,0,0.644)),url("/imagenes/desayuno.png");
-  height: 45vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.img-hero-servicios div{
-  color: white;
-  text-align: center;
-  font-weight: 300;
-  width: 90%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: left;
-}
-
-@media (max-width: 780px){
-  .img-hero-servicios{
-    height: 30vh;
-  }
-}
-
 .contenedor-card-servicios{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
