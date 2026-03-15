@@ -52,15 +52,16 @@ const Reservar = () => {
         <p>{location.titulo}</p>
 
         <h3>Fechas de estadía</h3>
-        <label htmlFor="checkin">Fecha de entrada</label>
+        <label htmlFor="checkin">Fecha de entrada</label><br />
         <input
           type="date"
           id="checkin"
           name="checkin"
           {...register("entrada")}
-        />
+        /><br /><br />
 
         <label htmlFor="checkout">Fecha de salida</label>
+        <br />
         <input
           type="date"
           id="checkout"
@@ -70,15 +71,16 @@ const Reservar = () => {
 
         <h3>Cantidad de huéspedes</h3>
         <label htmlFor="adultos">Número de adultos</label>
+        <br />
         <input
           type="number"
           id="adultos"
           name="adultos"
           min="1"
           {...register("numAdultos")}
-        />
+        /><br /><br />
 
-        <label htmlFor="ninos">Número de niños</label>
+        <label htmlFor="ninos">Número de niños</label><br />
         <input
           type="number"
           id="ninos"
@@ -88,21 +90,21 @@ const Reservar = () => {
         />
 
         <h3>Datos del huésped</h3>
-        <label htmlFor="nombre">Nombre</label>
-        <input type="text" id="nombre" name="nombre" {...register("nombre")} />
+        <label htmlFor="nombre">Nombre</label><br />
+        <input type="text" id="nombre" name="nombre" {...register("nombre")} /><br /><br />
 
-        <label htmlFor="apellido">Apellido</label>
+        <label htmlFor="apellido">Apellido</label><br />
         <input
           type="text"
           id="apellido"
           name="apellido"
           {...register("apellido")}
-        />
+        /><br /><br />
 
-        <label htmlFor="email">Correo electrónico</label>
-        <input type="email" id="email" name="email" {...register("mail")} />
+        <label htmlFor="email">Correo electrónico</label><br />
+        <input type="email" id="email" name="email" {...register("mail")} /><br /><br />
 
-        <label htmlFor="telefono">Teléfono</label>
+        <label htmlFor="telefono">Teléfono</label><br />
         <input
           type="tel"
           id="telefono"

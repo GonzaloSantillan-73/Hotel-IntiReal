@@ -23,12 +23,14 @@
   border-radius: 20px;
   padding: 20px;
   margin: 10px 10px;
+  font-weight: 500;
 }
 
 .form-reservar h2{
-  color: rgb(36, 134, 214);
+  color: rgb(17, 109, 184);
 }
 
 .form-reservar h3{
   color: rgb(36, 134, 214);
+  margin: 10px 0 10px 0
 }
