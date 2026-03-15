@@ -53,84 +53,41 @@ const Reservar = () => {
 
         <h3>Fechas de estadía</h3>
         <label htmlFor="checkin">Fecha de entrada</label><br />
-        <input
-          type="date"
-          id="checkin"
-          name="checkin"
-          {...register("entrada")}
-        /><br /><br />
+        <input type="date" id="checkin" name="checkin" {...register("entrada")}/><br /><br />
 
-        <label htmlFor="checkout">Fecha de salida</label>
-        <br />
-        <input
-          type="date"
-          id="checkout"
-          name="checkout"
-          {...register("salida")}
-        />
+        <label htmlFor="checkout">Fecha de salida</label><br />
+        <input type="date" id="checkout" name="checkout" {...register("salida")}/>
 
         <h3>Cantidad de huéspedes</h3>
-        <label htmlFor="adultos">Número de adultos</label>
-        <br />
-        <input
-          type="number"
-          id="adultos"
-          name="adultos"
-          min="1"
-          {...register("numAdultos")}
-        /><br /><br />
+        <label htmlFor="adultos">Número de adultos</label><br />
+        <input type="number" id="adultos" name="adultos" min="1" {...register("numAdultos")}/><br /><br />
 
         <label htmlFor="ninos">Número de niños</label><br />
-        <input
-          type="number"
-          id="ninos"
-          name="ninos"
-          min="0"
-          {...register("numNinos")}
-        />
+        <input type="number" id="ninos" name="ninos" min="0" {...register("numNinos")}/>
 
         <h3>Datos del huésped</h3>
         <label htmlFor="nombre">Nombre</label><br />
         <input type="text" id="nombre" name="nombre" {...register("nombre")} /><br /><br />
 
         <label htmlFor="apellido">Apellido</label><br />
-        <input
-          type="text"
-          id="apellido"
-          name="apellido"
-          {...register("apellido")}
-        /><br /><br />
+        <input type="text" id="apellido" name="apellido" {...register("apellido")}/><br /><br />
 
         <label htmlFor="email">Correo electrónico</label><br />
         <input type="email" id="email" name="email" {...register("mail")} /><br /><br />
 
         <label htmlFor="telefono">Teléfono</label><br />
-        <input
-          type="tel"
-          id="telefono"
-          name="telefono"
-          {...register("telefono")}
-        />
+        <input type="tel" id="telefono" name="telefono" {...register("telefono")}/>
 
         <h3>Hora aproximada de llegada</h3>
-        <label htmlFor="llegada">Horario de llegada</label>
-        <input
-          type="time"
-          id="llegada"
-          name="llegada"
-          {...register("horaLlegada")}
-        />
+        <label htmlFor="llegada">Horario de llegada</label><br />
+        <input type="time" id="llegada" name="llegada" {...register("horaLlegada")}/>
 
         <h3>Solicitudes especiales</h3>
         <label htmlFor="comentarios">Comentarios o solicitudes</label>
-        <textarea
-          id="comentarios"
-          name="comentarios"
-          {...register("solicitudes")}
-        ></textarea>
+        <textarea id="comentarios" name="comentarios" {...register("solicitudes")}></textarea>
 
         <h3>Confirmación</h3>
-        <label>
+        <label className="label-terminos">
           <input type="checkbox" name="terminos" {...register("terminos")} />
           Acepto los términos y condiciones
         </label>

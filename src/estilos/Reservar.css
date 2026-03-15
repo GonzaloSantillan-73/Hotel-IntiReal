@@ -34,3 +34,38 @@
   color: rgb(36, 134, 214);
   margin: 10px 0 10px 0
 }
+
+.form-reservar input{
+  height: 30px;
+  font-size: 18px;
+}
+
+.form-reservar textarea{
+  width: 100%;
+  max-width: 500px;
+  height: 70px;
+}
+
+.label-terminos{
+  display: flex;
+  align-items: center;
+}
+
+.label-terminos input{
+  margin-right: 5px;
+}
+
+.form-reservar button{
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgb(23, 99, 212);
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-reservar button:hover{
+  transform: scale(1.03);
+  background-color: rgb(50, 119, 223);
+}
