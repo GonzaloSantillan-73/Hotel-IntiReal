@@ -45,6 +45,7 @@ const Footer = () => {
       </div>
       <hr />
       <p className="final">Todos los derechos reservados Hotel IntiReal. Copyright ©</p>
+      <p className="final">By Gonzalo Santillan</p>
     </footer>
   );
 };

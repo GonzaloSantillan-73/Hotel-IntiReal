@@ -17,6 +17,7 @@ const Habitaciones = () => {
             descripcion={hab.descripcion}
             detalles={hab.detalles}
             precio={hab.precio}
+            max={hab.max}
           />
         ))}
       </div>

@@ -10,6 +10,7 @@ import Footer from "./componentes/Footer"
 import ScrollToTop from './componentes/ScrollToTop'
 import { FaWhatsapp } from "react-icons/fa6";
 import { Link } from 'react-router-dom'
+import Reservar from './componentes/Reservar'
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/habitaciones' element={<Habitaciones/>}/>
           <Route path='/servicios' element={<Servicios/>}/>
           <Route path='/contacto' element={<Contacto/>}/>
+          <Route path='/reservar' element={<Reservar/>}/>
         </Routes>
         <Footer/>
         <Link className='boton-flotante'>

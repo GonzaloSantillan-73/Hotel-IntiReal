@@ -6,6 +6,11 @@
   margin: 10px auto;
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.178);
+  transition: all 0.1s linear;
+}
+
+.item-habitaciones:hover{
+  transform: scale(1.05);
 }
 
 .item-habitaciones img{

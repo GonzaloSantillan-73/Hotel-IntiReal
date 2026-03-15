@@ -93,4 +93,5 @@ hr {
 
 .enlaces-footer a:hover, .iconos-redes a:hover, .iconos-contacto a:hover{
   transform: translateX(5px);
+  color: orange;
 }

@@ -1,0 +1,34 @@
+.contenedor-reservar{
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.contenedor-reservar > a{
+  margin: 10px 0 0 10px;
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: rgb(50, 118, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-reservar{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 10px 10px;
+}
+
+.form-reservar h2{
+  color: rgb(36, 134, 214);
+}
+
+.form-reservar h3{
+  color: rgb(36, 134, 214);
+}

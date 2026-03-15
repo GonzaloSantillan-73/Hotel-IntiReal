@@ -15,16 +15,26 @@ export const arrayHabitaciones = [
     titulo: "Habitación Matrimonial/Single",
     descripcion:
       "Habitación cómoda y funcional pensada para parejas o viajeros individuales. Ofrece un ambiente cálido con detalles en madera y adobe, iluminación suave y mobiliario artesanal. Dispone de espacio bien distribuido, descanso confortable y servicios esenciales que garantizan una estadía práctica y agradable.",
-    detalles: ["Baño privado", "Aire acondicionado", "WiFi", "Smart TV"],
+    detalles: [
+      "Baño privado",
+      "Aire acondicionado",
+      "WiFi",
+      "Smart TV"],
     precio: 28000,
+    max: 2
   },
   {
     img: "habitacion-doble-triple.jpg",
     titulo: "Habitación Doble/Triple",
     descripcion:
       "Espacio amplio diseñado para compartir en familia o con amigos. Cuenta con camas confortables, decoración rústica y ventanas que permiten buena iluminación natural. Su distribución favorece la comodidad y el descanso, integrando servicios modernos que aseguran una experiencia práctica y equilibrada.",
-    detalles: ["Smart TV", "Baño privado", "Aire acondicionado", "WiFi"],
+    detalles: [
+      "Baño privado",
+      "Aire acondicionado",
+      "WiFi",
+      "Smart TV"],
     precio: 25000,
+    max: 3
   },
   {
     img: "habitacion-familiar.png",
@@ -32,12 +42,12 @@ export const arrayHabitaciones = [
     descripcion:
       "Habitación espaciosa pensada para grupos o familias que buscan comodidad y amplitud. Combina elementos rústicos con detalles modernos, generando un entorno funcional y armonioso. Dispone de camas amplias, buena circulación interna y servicios completos que brindan confort durante toda la estadía.",
     detalles: [
-      "Hasta 5 personas",
+      "2 baños",
       "Aire acondicionado",
-      "TV Smart + WiFi",
-      "Baño privado",
-    ],
+      "WiFi",
+      "Smart TV"],
     precio: 45000,
+    max:5
   },
 ];
 /*
@@ -65,7 +75,11 @@ export const arrayTestimonios = [
       "Mi estancia en Hotel fue espectacular. El diseño del hotel, combinado con sus servicios de primera categoría, hicieron que fuera una experiencia verdaderamente relajante y agradable.",
   },
 ];
-
+/*
+////////////////////////////////////////////
+            VALORES
+////////////////////////////////////////////
+*/
 export const arrayValores = [
   {
     titulo: "Hospitalidad",
@@ -84,7 +98,11 @@ export const arrayValores = [
       "Respetamos el entorno natural y promovemos prácticas ecológicas.",
   },
 ];
-
+/*
+////////////////////////////////////////////
+            SERVICIOS
+////////////////////////////////////////////
+*/
 export const arrayServicios = [
   {
     titulo: "Desayuno Artesanal",
